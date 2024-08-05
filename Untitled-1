@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços de TI - SouzaWeb</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #333, #555);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .section {
+            margin-bottom: 50px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        h2 {
+            border-bottom: 3px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .service, .testimonial {
+            background: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #333;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service:hover, .testimonial:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .service h3, .testimonial p {
+            margin: 0;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #333;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+        form input[type="submit"]:hover {
+            background-color: #555;
+        }
+        .captcha {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #bbb;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            color: white;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Serviços de TI - SouzaWeb</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <div class="container">
+        <section id="home" class="section">
+            <h2>Bem-vindo</h2>
+            <p>Bem-vindo ao meu site de serviços de Tecnologia da Informação. Ofereço soluções personalizadas para atender às suas necessidades de TI, desde suporte técnico até desenvolvimento de software.</p>
+        </section>
+        <section id="sobre" class="section">
+            <h2>Sobre</h2>
+            <p>Olá! Meu nome é Marcos, sou formado em Tecnologia da Informação pela S.O.S. Com anos de experiência no setor de TI, estou comprometido em fornecer serviços de alta qualidade e soluções inovadoras para meus clientes.</p>
+        </section>
+        <section id="servicos" class="section">
+            <h2>Serviços</h2>
+            <div class="service">
+                <h3><i class="fa fa-broom"></i> Limpeza</h3>
+                <p>Garantimos que todos os seus equipamentos de TI estejam livres de poeira e sujeira, melhorando o desempenho e prolongando a vida útil dos dispositivos.</p>
+            </div>
+            <div class="service">
+                <h3><i class="fa fa-tools"></i> Manutenção</h3>
+                <p>Realizamos manutenção preventiva e corretiva em hardware e software, assegurando que seus sistemas estejam sempre operacionais.</p>
+            </div>
+            <div class="service">
+                <h3><i class="fa fa-search"></i> Avaliação</h3>
+                <p>Avaliamos seus sistemas de TI para identificar problemas e oportunidades de melhoria, oferecendo soluções eficientes para otimização.</p>
+            </div>
+        </section>
+        <section id="depoimentos" class="section">
+            <h2>Depoimentos</h2>
+            <div class="testimonial">
+                <p>"A SouzaWeb fez um trabalho excelente de limpeza nos nossos equipamentos. O desempenho melhorou significativamente e estamos muito satisfeitos." - Cliente Satisfeito</p>
+            </div>
+            <div class="testimonial">
+                <p>"O serviço de manutenção da SouzaWeb é impecável. Eles sempre resolvem nossos problemas rapidamente e com grande eficiência." - Cliente Feliz</p>
+            </div>
+            <div class="testimonial">
+                <p>"Graças à avaliação detalhada da SouzaWeb, conseguimos identificar e corrigir vários pontos críticos em nossa infraestrutura de TI. Recomendo fortemente!" - Cliente Fiel</p>
+            </div>
+        </section>
+        <section id="contato" class="section">
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" required></textarea><br><br>
+                <div class="captcha">
+                    <label for="captcha">Por favor, resolva o captcha: 3 + 4 = ?</label><br>
+                    <input type="text" id="captcha" name="captcha" required><br>
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 SouzaWeb. Todos os direitos reservados.</p>
+        <p><a href="#privacidade">Política de Privacidade</a> | <a href="#termos">Termos de Serviço</a></p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('nav a').on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+
+            $('form').on('submit', function(event) {
+                var captchaAnswer = $('#captcha').val();
+                if (captchaAnswer != '7') {
+                    alert('Resposta do captcha incorreta!');
+                    event.preventDefault();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
